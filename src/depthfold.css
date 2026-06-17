@@ -1,0 +1,140 @@
+/* DepthFold standalone styles (scoped by .depthfold-root) */
+
+.depthfold-root {
+  --page-deep: #040807;
+  --page-mid: #0a1620;
+  --neon-mint: #00ffd6;
+  --neon-green: #08e260;
+  --neon-violet: #c084fc;
+  --neon-pink: #f472b6;
+  --glass-edge: rgba(255, 255, 255, 0.85);
+
+  min-height: 100vh;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  color: #e8fff8;
+  background-color: var(--page-deep);
+  background-image:
+    radial-gradient(ellipse 90% 60% at 10% -10%, rgba(0, 255, 214, 0.22), transparent 50%),
+    radial-gradient(ellipse 70% 50% at 95% 10%, rgba(192, 132, 252, 0.2), transparent 45%),
+    linear-gradient(165deg, var(--page-deep) 0%, var(--page-mid) 45%, #061210 100%);
+  background-attachment: fixed;
+}
+
+.depthfold-root * {
+  box-sizing: border-box;
+}
+
+.depthfold-root .section {
+  padding: 4rem 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.depthfold-root .section-head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.depthfold-root .section-head h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.depthfold-root .section-head p {
+  margin: 0 auto;
+  max-width: 38rem;
+  opacity: 0.7;
+}
+
+.depthfold-root .hero {
+  padding: 5rem 1.25rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.depthfold-root .hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 1rem;
+  font-weight: 800;
+  background: linear-gradient(120deg, #5eead4, #d8b4fe, #fda4af);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.depthfold-root .hero p {
+  max-width: 40rem;
+  margin: 0 auto 1.5rem;
+  opacity: 0.8;
+}
+
+.depthfold-root .hero a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  background: rgba(0,255,214,0.15);
+  border: 1px solid rgba(0,255,214,0.4);
+  color: #e8fff8;
+  transition: 0.2s ease;
+}
+
+.depthfold-root .hero a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0,255,214,0.3);
+}
+
+.depthfold-root .shape-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.depthfold-root .card {
+  padding: 2rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #00ffd6, #08e260);
+  color: #003b2f;
+  font-weight: 700;
+  min-height: 160px;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.depthfold-root .card:hover {
+  transform: rotate3d(1,1,0,15deg);
+  box-shadow: 0 35px 60px rgba(0,0,0,0.6);
+}
+
+.depthfold-root .stage {
+  max-width: 420px;
+  margin: 2rem auto 0;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(0,255,214,0.3);
+}
+
+.depthfold-root .stage-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.depthfold-root .stage-card {
+  flex: 0 0 100%;
+  padding: 2rem;
+  background: linear-gradient(145deg,#22d3ee,#2563eb);
+  min-height: 220px;
+}
+
+.depthfold-root footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  opacity: 0.6;
+  font-size: 0.85rem;
+}
